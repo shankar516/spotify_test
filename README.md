@@ -1,35 +1,22 @@
-Features
-API Integration: Connects to Spotify using Spotipy and OAuth 2.0.
+Spotify Track Data Extractor & Analyzer
+This project automates the extraction of music metadata from Spotify URLs using the Spotify Web API. It processes track information, stores it in a MySQL database, and provides data visualization and analysis capabilities.
 
-Data Extraction: Fetches user playlists, top tracks, and audio features (danceability, energy, etc.).
+## 🚀 Features
+URL Parsing: Uses Regex to extract unique track IDs from Spotify links.
 
-Data Processing: Cleans and organizes raw JSON data into structured formats using Pandas.
+Metadata Extraction: Retrieves track name, artist, album, popularity, and duration.
 
-Visualization: Generates insights into music tastes using Matplotlib or Seaborn.
+Batch Processing: Reads multiple URLs from a track_urls.txt file for bulk processing.
 
-## Tech Stack
-Language: Python
+Database Management: Stores data in a structured MySQL table for long-term storage and querying.
 
-Libraries: spotipy, pandas, matplotlib
+Data Visualization: Uses Matplotlib to create visual reports of track popularity and metrics.
 
-Database: SQLite (for caching track data)
+## 🛠 Tech Stack
+Language: Python 3.x
 
-Environment: Flask (optional for web-based dashboard)
+API: Spotipy (Spotify Web API wrapper)
 
-## Setup Instructions
-Clone the Repository:
+Database: MySQL
 
-Bash
-git clone https://github.com/shankar516/spotify_test.git
-cd spotify_test
-Install Dependencies:
-
-Bash
-pip install -r requirements.txt
-API Credentials:
-Create a .env file and add your Spotify Developer credentials:
-
-Code snippet
-SPOTIPY_CLIENT_ID='your_client_id'
-SPOTIPY_CLIENT_SECRET='your_client_secret'
-SPOTIPY_REDIRECT_URI='http://localhost:8080'
+Libraries: Pandas, Matplotlib, mysql-connector-python, Re
