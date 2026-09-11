@@ -20,5 +20,5 @@ API: Spotipy (Spotify Web API wrapper)
 Database: MySQL
 
 Libraries: Pandas, Matplotlib, mysql-connector-python, Re
-!!!!!!!!!
 
+!!!!!!
